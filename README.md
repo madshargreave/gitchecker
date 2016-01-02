@@ -45,6 +45,16 @@ You must start both the webpack development server and the Phoenix server in sep
 ***Phoenix (server):*** 
 `./start` or `source .env && mix phoenix.server`
 
+##Stack
+
+* Webpack
+* Redux
+* React
+* React Router
+* Elixir
+* Phoenix
+* PostgreSQL
+
 ##Contributing
 
 Happy to accept any feedback, bug reports and pull requests
