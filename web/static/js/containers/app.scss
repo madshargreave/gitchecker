@@ -1,0 +1,43 @@
+#root {
+  height: 100%;
+}
+
+.main-section {
+  padding-top: 100px;
+  height: 100%;
+}
+
+.main-section .info {
+  color: gray;
+}
+
+.main-section .fluid.input {
+  margin-bottom: 1rem;
+}
+
+.main-section .error {
+  color: #d95c5c;
+  margin-bottom: 1rem;
+}
+
+.main-section .action {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.no-link {
+  color: gray;
+}
+
+.no-link:hover {
+  color: gray;
+}
+
+a {
+  color: #3b83c0;
+}
+
+a:hover {
+  color: #3b83c0;
+}

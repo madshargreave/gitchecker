@@ -1,0 +1,22 @@
+.header-component .ui.menu {
+  padding: 0 0rem 0 0rem;
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #3b83c0;
+}
+
+.header-component .ui.menu .menu {
+  display: flex;
+  align-items: center;
+  height: 48px;
+}
+
+.header-component .ui.menu .menu .item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+

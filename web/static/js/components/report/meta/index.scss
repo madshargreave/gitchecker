@@ -1,0 +1,24 @@
+.report .report-inner .group .meta {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.report .report-inner .group .meta .inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.report .report-inner .group .meta .inner .statistic {
+  flex: 1;
+  min-width: 120px;
+}
+
+.report .report-inner .group .meta .inner .statistic .icon {
+  color: #3b83c0;
+  margin-right: 0.5rem;
+}
+
+.report .report-inner .group .meta .inner .subscribers.statistic {
+  flex: 2;
+}

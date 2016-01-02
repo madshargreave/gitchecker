@@ -1,0 +1,29 @@
+.report .report-inner .group .metrics {
+  display :flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.ui.label.statistic-label {
+  background: #3b83c0;
+  color: white;
+  box-sizing: border-box;
+  min-width: 15rem;
+  flex: 1, 1, 15rem;
+  margin: 0 0.5rem 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.ui.label.statistic-label.active {
+  background: none;
+  border: 1px solid #3b83c0;
+  color: black;
+}
+
+.ui.label.statistic-label .detail {
+  float: right;
+}

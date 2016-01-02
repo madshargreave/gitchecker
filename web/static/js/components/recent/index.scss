@@ -1,0 +1,13 @@
+.recent {
+  margin-top: 30px;
+  // margin-bottom: 150px;
+}
+
+.recent .loading-container {
+  display: flex;
+  justify-content: center;
+}
+
+.recent .item.project .header {
+  color: #3b83c0;
+}

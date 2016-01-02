@@ -1,0 +1,31 @@
+.about-page {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-page .content {
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  color: gray;
+}
+
+.about-page .content .column .italic {
+  font-style: italic;
+}
+
+.about-page .content .column .color {
+  color: #3b83c0;
+}
+
+.about-page .content .column.left {
+  text-align: right;
+}
+
+.about-page .content .column.right {
+  text-align: left;
+  // margin: 1rem;
+}

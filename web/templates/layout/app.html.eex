@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="GitChecker is an open source tool which aggregates statistics about Github projects">
+    <meta name="author" content="mads hargreave">
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.10.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.2.0/semantic.min.css">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.2.0/semantic.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <title>GitChecker</title>
+    <link rel="stylesheet" type="text/css" href="<%= static_path(@conn, "/js/app.css") %>">
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/javascript" src="<%= static_path(@conn, "/js/app.js") %>"></script>
+  </body>
+</html>
