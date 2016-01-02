@@ -14,32 +14,33 @@ class GeneralStatisticsBox extends Component {
   }
 
   getData () {
-    const { data } = this.props;
+    const { ownerLogin, ownerType, createdAt, language, size } = this.props.data;
+    const sizeString = `${size} kb`;
 
     return [
       {
         title: 'Owner',
-        value: data.ownerLogin,
+        value: ownerLogin,
         iconClass: 'user'
       },
       {
-        title: 'Type',
-        value: data.ownerType,
+        title: 'Owner Type',
+        value: ownerType,
         iconClass: 'tag'
       },
       {
         title: 'Created',
-        value: (() => { return moment(data.createdAt).fromNow(); })(),
+        value: (() => { return moment(createdAt).fromNow(); })(),
         iconClass: 'calendar outline'
       },
       {
         title: 'Language',
-        value: data.language,
+        value: language,
         iconClass: 'code'
       },
       {
         title: 'Size',
-        value: data.size,
+        value: sizeString,
         iconClass: 'circle'
       }
     ];
