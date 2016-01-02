@@ -15,7 +15,7 @@ config :githubber, Githubber.Endpoint,
   watchers: []
 
 # Must be filled out with own access token
-config :githubber, github_access_token: System.get_env(:github_access_token)
+config :githubber, github_access_token: System.get_env("GITHUB_ACCESS_TOKEN")
 
 # Watch static and templates for browser reloading.
 config :githubber, Githubber.Endpoint,
