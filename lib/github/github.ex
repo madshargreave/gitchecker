@@ -34,7 +34,7 @@ defmodule Githubber.Github do
   def headers do
     %{
       "Accept" => "application/vnd.github.v3.star+json",
-      "Authorization" => "token #{System.get_env(:github_access_token)}"
+      "Authorization" => "token #{System.get_env("GITHUB_ACCESS_TOKEN")}"
     }
   end
 
