@@ -45,6 +45,7 @@ class Header extends Component {
       if (href) { return (<a
         key={route}
         href={route}
+        target='_blank'
         className={classes}>{text}</a>)}
 
       return (
