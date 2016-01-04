@@ -22,14 +22,14 @@ class Header extends Component {
         },
         {
           classes: 'header',
-          route: 'https://github.com/madshargreave/gitchecker',
-          text: 'GitHub',
-          href: true,
+          route: '/about',
+          text: 'About'
         },
         {
           classes: 'header',
-          route: '/about',
-          text: 'About'
+          route: 'https://github.com/madshargreave/gitchecker',
+          text: 'GitHub',
+          href: true,
         },
       ],
       right: [
