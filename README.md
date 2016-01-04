@@ -16,8 +16,9 @@ I know I am not using SCSS variables, but I was unable to get stylesheet imports
 * Phoenix
 * PostgreSQL
 
-##Todo
+##Todo/Ideas
 - [ ] Add more statistics and metrics
+- [ ] Devise an algorithm for calculating an overall activity/maintenance score based on aforementioned metrics
 - [ ] Create an Elixir GenServer that manages resyncing projects, instead of initiating it from the client
 - [ ] Clean up SCSS codes (perhaps using CSS modules or inline React styling)
 - [ ] Add functionality and interface for comparing two repositories simultaneously
