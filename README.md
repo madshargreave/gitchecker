@@ -1,7 +1,20 @@
 #GitChecker
-GitChecker is an open source tool which aggregates statistics about Github projects. 
+GitChecker is an open source tool which aggregates statistics about Github projects.
 
 Have you ever been stuck wondering whether or not to use a library or a framework, uncertain of how well it was maintained? Help is here!
+
+##Disclaimer
+I know I am not using SCSS variables, but I was unable to get stylesheet imports to work and I was impatient. If anyone manages a pull request would be much appreciated.
+
+##Stack
+
+* Webpack
+* Redux
+* React
+* React Router
+* Elixir
+* Phoenix
+* PostgreSQL
 
 ##Installation
 ```
@@ -39,21 +52,11 @@ export GITHUB_ACCESS_TOKEN="your github access token"
 ###Starting servers
 You must start both the webpack development server and the Phoenix server in seperate terminal tabs. For convenience, a `start` script has been suppliedin the project root to source the `.env` file before starting the webserver.
 
-***Webpack (client):*** 
+***Webpack (client):***
 `npm start`
 
-***Phoenix (server):*** 
+***Phoenix (server):***
 `./start` or `source .env && mix phoenix.server`
-
-##Stack
-
-* Webpack
-* Redux
-* React
-* React Router
-* Elixir
-* Phoenix
-* PostgreSQL
 
 ##Contributing
 
