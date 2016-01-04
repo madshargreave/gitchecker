@@ -6,11 +6,23 @@ class Recent extends Component {
 
   static propTypes = {
     projects: PropTypes.arrayOf(PropTypes.object).isRequired,
-    showLoadingIndicator: PropTypes.bool.isRequired
+    isFetchingRecent: PropTypes.bool.isRequired
   };
 
   constructor (props) {
     super(props);
+  }
+
+  shouldShowRendingIndicator () {
+    const { projects, isFetchingRecent } = this.props;
+
+    if (projects.length > 0) {
+      return false;
+    } else if (isFetchingRecent) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
   renderProjects () {
@@ -50,12 +62,10 @@ class Recent extends Component {
   }
 
   render () {
-    const { showLoadingIndicator } = this.props;
-
     return (
       <div className='recent'>
         <h3 className="ui header">Recently Analyzed</h3>
-        {showLoadingIndicator ? this.renderLoadingIndicator() : this.renderProjects()}
+        {this.shouldShowRendingIndicator() ? this.renderLoadingIndicator() : this.renderProjects()}
       </div>
     )
   }

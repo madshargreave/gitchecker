@@ -31,7 +31,7 @@ class App extends Component {
     if (!_.isEmpty(params)) { return null; }
 
     return (
-      <Recent showLoadingIndicator={isFetchingRecent} projects={recent}/>
+      <Recent isFetchingRecent={isFetchingRecent} projects={recent}/>
     );
   }
 
@@ -40,12 +40,14 @@ class App extends Component {
 
     return (
       <DocumentTitle title='GitChecker | Home'>
-        <PageLayout router={router}>
+        <PageLayout
+          router={router}
+          mainIconClass='circular search'
+          mainIconText='GitChecker'>
+
           <InputSection
             actions={this._boundActions}
-            project={project}
-            mainIconClass='circular search'
-            mainIconText='GitChecker'/>
+            project={project}/>
 
           {this.renderRecentSection()}
         </PageLayout>
