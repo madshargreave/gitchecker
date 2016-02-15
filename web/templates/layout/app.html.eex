@@ -20,7 +20,7 @@
           s = document.createElement('script');
           s.src = 'https://slacker-backend.herokuapp.com/js/chat.js';
           s.async = true;
-          s.onload = function () { __init('ASlWBAJr8Exw8') };
+          s.onload = function () { __init('AS0F3VePlgbpg') };
           document.getElementsByTagName('head')[0].appendChild(s);
         }
       })();
