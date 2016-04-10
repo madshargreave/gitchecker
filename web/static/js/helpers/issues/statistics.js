@@ -10,7 +10,7 @@ export function groupByOpenIssues (data) {
 
     return data.length;
   });
-  grouping = _.pairs(grouping);
+  grouping = _.toPairs(grouping);
 
   return grouping;
 }
@@ -26,7 +26,7 @@ export function groupByClosedIssues (data) {
     data = data.filter(entry => entry.state == 'closed');
     return data.length;
   });
-  grouping = _.pairs(grouping);
+  grouping = _.toPairs(grouping);
 
   return grouping;
 }
@@ -46,7 +46,7 @@ export function groupByClosedIssuePercentage (data) {
     let percentage = mathjs.round(ratio * 100, 2);
     return percentage;
   });
-  grouping = _.pairs(grouping);
+  grouping = _.toPairs(grouping);
 
   return grouping;
 }
@@ -76,7 +76,7 @@ export function groupByAverageResolutionTime (data, total) {
     average = mathjs.round(sum / count, 2);
     return average;
   });
-  grouping = _.pairs(grouping);
+  grouping = _.toPairs(grouping);
 
   return grouping;
 }

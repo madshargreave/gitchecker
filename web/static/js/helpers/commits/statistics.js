@@ -5,7 +5,7 @@ export function groupByCommits (data) {
     return moment(entry.firstDayOfTheWeek).format('MM/DD');
   });
   grouping = _.mapValues(grouping, group => group[0].total);
-  grouping = _.pairs(grouping);
+  grouping = _.toPairs(grouping);
 
   return grouping;
 }
