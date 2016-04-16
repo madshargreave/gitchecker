@@ -18,7 +18,7 @@
       (function () {
         window.onload = function () {
           s = document.createElement('script');
-          s.src = 'https://resend.io/js/widget.js';
+          s.src = 'https://resend.io/widget.js';
           s.async = true;
           s.onload = function () { __init('AS0NnffShF4mU') };
           document.getElementsByTagName('head')[0].appendChild(s);
